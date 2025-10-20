@@ -1,0 +1,66 @@
+
+
+body {
+    background-color: black;
+
+}
+@media only screen and (max-width: 768px){
+
+    body {background-color: red;}
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+}
+
+.button {
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    border-radius: 8px;
+}
+
+.span {
+    background-color: rgba(62, 61, 61, 0);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 50px;
+    padding: none;
+}
+
+li {
+    display: inline-block;
+    gap: 50px;
+    padding: none;
+
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-family: Helvetica, sans-serif;
+    text-align: center
+}
+
+header {
+    margin-top: 10%;
+}
+
+p {
+    font-family: ;
+    font-size: px;
+}
