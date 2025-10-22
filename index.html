@@ -4,52 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Design</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <img src="Logo.png" alt="Logo">
         <ul>
             <li>
-                <a class="span" href="#HOME">Home</a>
+                <a class="span" href="#HOME" id="home">Home</a>
             </li>
             <li>
-                <a href="#Services">Services</a>
+                <a href="#Services" id="mylinks">Services</a>
             </li>
             <li>
-                <a href="#Work">Work</a>
+                <a href="#Work" id="mylinks">Work</a>
             </li>
             <li>
-                <a href="#Process">Process</a>
+                <a href="#Process" id="mylinks">Process</a>
             </li>
             <li>
-                <a href="#About">About</a>
+                <a href="#About" id="mylinks">About</a>
             </li>
             <li>
-                <a href="#Careers">Careers</a>
+                <a href="#Careers" id="mylinks">Careers</a>
             </li>
         </ul>
-        <button type="button" class="button">Contact Us</button>
+        <button type="button" class="contact-button-nav">Contact Us</button>
     </nav>
-    <header>
-        <h1>
-            A Digital Product Studio
-            <br>that will Work
-        </h1>
-        <section>
-            For
-Startups
-,
-Enterprise leaders
-,
-Media & Publishers
-and
-Social Goodv
+    <header class="header">
+        <section class="title">
+            <h1>A Digital Product Studio
+                <br>that will Work
+            </h1>
         </section>
+        <section class="tags">
+            <p>For</p>
+            <span>Startups</span>
+            <p>,</p>
+            <span>Enterprise leaders</span>
+            <p>,</p>
+            <span>Media & Publishers</span>
+            <p>and</p>
+            <span>Social Good</span>
+        </section>
+        <div>
+            <button type="button" class="works-button">Our Works</button>
+            <button type="button" class="contact-button-header">Contact Us</button>
+        </div>
     </header>
+    <main>
+        <p class:="trusted"> Trusted by 250+ Companies</p>
+        <section>
+            <div class="clients">
+                <img src="zapier.png" alt="Zapier">
+                <img src="spotify.png" alt="Spotify">
+                <img src="zoom.png" alt="Zoom">
+                <img src="slack.png" alt="Slack">
+                <img src="amazon.png" alt="Amazon">
+                <img src="adobe.png" alt="Adobe">
+            </div>
 
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
+        </section>
+
+        <section class="article">
+            <article>
+                <h3>Design</h3>
+                <p>Our design team is passionate about creating stunning, user-centric designs that captivate your
+                    audience and elevate your brand.</p>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </article>
+            <article>
+                <h3>Engineering</h3>
+                <p>We combine technical expertise with innovation to build robust, scalable digital solutions
+                    tailored to your needs.</p>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </article>
+            <article>
+                <h3>Project Management</h3>
+                <p>Our experienced team ensures that projects are delivered on time, within budget, and according to
+                    your specifications.</p>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div class="footer-container">
+                <img src="Logo.png" alt="SquareUp">
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Work</a>
+                    <a href="#">Process</a>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="social">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+        </section>
+        <section>
+            <div class="contact-info">
+                <p> hello@squareup.com</p>
+                <p> +91 9813 23 2309</p>
+                <p> Somewhere in the World</p>
+            </div>
+            <p class="copyright">© 2023 SquareUp. All rights reserved.</p>            
+        </section>
+    </footer>
 
 </body>
 
