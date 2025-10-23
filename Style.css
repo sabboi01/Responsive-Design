@@ -1,6 +1,7 @@
 body {
     background-color: #1a1a1a;
     font-family: Arial, sans-serif;
+
 }
 
 nav {
@@ -8,6 +9,11 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1% 10% 1% 10%;
+
+}
+
+#button {
+    display: none
 }
 
 nav a {
@@ -31,7 +37,7 @@ nav a {
 }
 
 .span {
-    background-color: #262626;
+    background-color: #303030;
     border-radius: 8px;
     padding: 1%;
 
@@ -41,7 +47,7 @@ ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    gap: 10px;
+    gap: 10%;
 }
 
 header {
@@ -97,14 +103,16 @@ header {
     border: 1px solid;
     border-color: rgba(152, 152, 154, 1);
 }
+
 .separator {
-  color: rgba(152, 152, 154, 1);
-  align-self: center;
+    color: rgba(152, 152, 154, 1);
+    align-self: center;
 }
 
 .button {
     margin-top: 2%;
 }
+
 .works-button {
     display: inline-block;
     padding: 10px 30px;
@@ -134,15 +142,17 @@ main {
     text-align: center;
 }
 
-.trusted {
-    padding: 8px 30px;
-    text-align: center;
+.trusted-button {
     background-color: #1a1a1a;
     display: inline-block;
+    color: rgba(152, 152, 154, 1);
+    ;
     border-color: rgba(152, 152, 154, 1);
+    padding: 8px 30px;
     border-radius: 10px;
+    border-width: 1px;
     margin-bottom: 20px;
-    margin-top: -10px;
+    margin-top: -30px;
 }
 
 .clients {
@@ -169,6 +179,11 @@ main {
     margin-right: 10%;
 }
 
+#services {
+    color: rgba(152, 152, 154, 1);
+    font-size: 16px;
+}
+
 h2 {
     font-size: 32px;
     font-weight: 200;
@@ -182,9 +197,12 @@ h3 {
 
 .article {
     display: flex;
+    justify-items: center;
     gap: 8%;
     margin-top: 5%;
     text-align: left;
+    color: rgba(152, 152, 154, 1);
+    font-size: 16px;
     margin-left: 10%;
     margin-right: 10%
 }
@@ -196,13 +214,15 @@ h3 {
 }
 
 .btn-secondary {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #262626;
+    display: block;
+    width: 100%;
+    background-color: #262626;
+    color: white;
     border-radius: 5px;
-    text-decoration: none;
+    text-align: center;
+
 }
+
 
 footer {
     padding: 40px 20px;
@@ -248,6 +268,11 @@ img {
         display: none;
     }
 
+    #button {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -255,11 +280,11 @@ img {
         display: flex;
     }
 
-    .tags     {
+    .tags {
         flex-direction: row;
         gap: 0.3rem;
         margin-left: 0%;
-    margin-right: 0%;
+        margin-right: 0%;
     }
 
     .tag-item {
@@ -297,6 +322,10 @@ img {
         align-items: center;
     }
 
+    img {
+        max-width: 60%;
+        height: auto;
 
+    }
 
 }
