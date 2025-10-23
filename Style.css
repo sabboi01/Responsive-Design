@@ -33,19 +33,15 @@ nav a {
 .span {
     background-color: #262626;
     border-radius: 8px;
-    padding: 8px;
+    padding: 1%;
+
 }
 
 ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    padding: 0%;
-    gap: 20px;
-}
-
-li {
-    gap: 20px;
+    gap: 10px;
 }
 
 header {
@@ -55,10 +51,8 @@ header {
     flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 25%;
-    background-image: url(Background-header.png);
-    background-position: top;
-    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+    background: url("Background-header.png") top no-repeat;
     border-left: 2px solid #262626;
     border-right: 2px solid #262626;
 }
@@ -67,12 +61,8 @@ header {
     padding-top: 5%;
 }
 
-.header>img {
-    width: 100%;
-    height: auto;
-}
 
-.title h1 {
+#title h1 {
     color: white;
     font-size: 38px;
     font-weight: 600;
@@ -82,25 +72,39 @@ header {
 
 .tags {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #26262667;
-    gap: 2%;
+    color: white;
+    gap: 1%;
     margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-right: 11%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
     border: 2px solid #262626;
     border-radius: 10px;
 }
 
-.tags span {
+.tag-item {
     color: white;
     background-color: rgba(38, 38, 38, 1);
-    padding: 2%;
+    white-space: nowrap;
+    padding: 8px 16px;
     border-radius: 10px;
+    border: 1px solid;
     border-color: rgba(152, 152, 154, 1);
 }
+.separator {
+  color: rgba(152, 152, 154, 1);
+  align-self: center;
+}
 
+.button {
+    margin-top: 2%;
+}
 .works-button {
     display: inline-block;
     padding: 10px 30px;
@@ -126,12 +130,6 @@ div {
     gap: 5%;
 }
 
-p {
-    color: rgba(152, 152, 154, 1);
-}
-
-
-
 main {
     text-align: center;
 }
@@ -145,6 +143,9 @@ main {
 }
 
 .clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-left: 2px solid #262626;
     border-right: 2px solid #262626;
     height: 40px;
@@ -238,14 +239,31 @@ img {
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
     nav ul {
         display: none;
     }
 
-    header .container {
-        flex-direction: column;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
+
+    .tags     {
+        flex-direction: row;
+        gap: 0.3rem;
+        margin-left: 0%;
+    margin-right: 0%;
+    }
+
+    .tag-item {
+        width: 60%;
+
+    }
+
 
     .hero h1 {
         font-size: 16px;
@@ -263,29 +281,19 @@ img {
         display: none;
     }
 
-       img {
-        max-width: 30%;
+    .clients {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40%;
         height: auto;
+
     }
 
     .article {
         flex-direction: column;
         align-items: center;
     }
-.tags {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 2px solid #262626;
-    border-radius: 10px;
-}
-.tags span {
-    color: white;
-   
-    padding: 2%;
-    border-radius: 10px;
-    border-color: rgba(152, 152, 154, 1);
-}
+
+
 
 }
