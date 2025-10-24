@@ -1,46 +1,7 @@
 body {
     background-color: #1a1a1a;
-    font-family: Arial, sans-serif;
-
-}
-
-nav {
-
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 10% 1% 10%;
-
-}
-
-#button {
-    display: none
-}
-
-nav a {
-
     color: white;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-}
-
-#nav {
-    border-top: 2px solid #262626;
-    border-bottom: 2px solid #262626;
-}
-
-.contact-button-nav {
-    background-color: greenyellow;
-    display: inline-block;
-    padding: 8px 30px;
-    border-radius: 10px;
-}
-
-.span {
-    background-color: #303030;
-    border-radius: 8px;
-    padding: 1%;
-
+    font-family: sans-serif;
 }
 
 ul {
@@ -50,25 +11,78 @@ ul {
     gap: 10%;
 }
 
+/* nav */
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 6px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#nav {
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+#home {
+    padding: 12px 22px;
+    gap: 10px;
+    border-radius: 6px;
+    background: #262626;
+}
+
+#button {
+    display: none
+}
+
+.contact-button-nav {
+    background-color: #9EFF00;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 6px;
+}
+
+#logo {
+    display: flex;
+    width: 118px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+/* end nav */
+
+
+/* header */
+
 header {
+    background: url("header\ Baggrund.png") top no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 10vh;
-    background: url("Background-header.png") top no-repeat;
     border-left: 2px solid #262626;
     border-right: 2px solid #262626;
+
 }
 
-.header {
-    padding-top: 5%;
-}
-
-
-#title h1 {
+#title {
+    padding-top: 87px;
     color: white;
     font-size: 38px;
     font-weight: 600;
@@ -78,46 +92,41 @@ header {
 
 .tags {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #26262667;
-    color: white;
-    gap: 1%;
-    margin-left: 10%;
-    margin-right: 11%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
-    border: 2px solid #262626;
-    border-radius: 10px;
-}
-
-.tag-items {
-    color: white;
-    background-color: rgba(38, 38, 38, 1);
-    white-space: nowrap;
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: rgba(152, 152, 154, 1);
+    background-color: rgba(36, 36, 36, 0.20);
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    border-color: #98989a1a;
+    border-style: ridge;
+    padding: 18px 30px;
+    gap: 6px;
 }
 
 .separator {
-    color: rgba(152, 152, 154, 1);
-    align-self: center;
+    color: #98989A;
+    font-size: 18px;
+}
+
+.tag-items {
+    background-color: #262626;
+    white-space: nowrap;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
 }
 
 .button {
-    margin-top: 2%;
+    margin-top: 30px;
+    margin-bottom: 253px;
 }
 
 .works-button {
     display: inline-block;
     padding: 10px 30px;
     background-color: #26262667;
-    border-color: #878484;
+    border-color: #98989a38;
     color: white;
     border-radius: 10px;
 }
@@ -127,32 +136,34 @@ header {
     display: inline-block;
     padding: 8px 30px;
     border-radius: 10px;
-
 }
 
-div {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    padding: 0%;
-    gap: 5%;
-}
+/* end header */
+
+/* main */
 
 main {
-    text-align: center;
+    align-items: center;
+}
+
+.btn-clients {
+    display: flex;
+    justify-content: center;
 }
 
 .trusted-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1a1a1a;
     display: inline-block;
-    color: rgba(152, 152, 154, 1);
-    ;
-    border-color: rgba(152, 152, 154, 1);
-    padding: 8px 30px;
+    color: white;
+    border-color: #262626;
+    padding: 14px 24px;
     border-radius: 10px;
     border-width: 1px;
     margin-bottom: 20px;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .clients {
@@ -161,68 +172,74 @@ main {
     align-items: center;
     border-left: 2px solid #262626;
     border-right: 2px solid #262626;
+    margin-bottom: 40px;
     height: 40px;
-    gap: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
+    gap: 80px;
 }
 
-.services {
+.services-head {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 40px;
     background-image: url(Container.png);
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-#services {
-    color: rgba(152, 152, 154, 1);
-    font-size: 16px;
-}
-
-h2 {
+#services-h2 {
     font-size: 32px;
     font-weight: 200;
     margin-bottom: 10px;
-    color: white
 }
 
-h3 {
-    color: white;
+.services-p {
+    margin-bottom: 50px;
 }
 
-.article {
-    display: flex;
-    justify-items: center;
-    gap: 8%;
-    margin-top: 5%;
-    text-align: left;
+
+#services {
     color: rgba(152, 152, 154, 1);
     font-size: 16px;
+
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin: 3% 10% 3% 10%;
+    padding: 0%;
+    gap: 10%;
+}
+
+.div.services {
+    display: flex;
+    justify-items: center;
+    margin-top: auto;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 50;
     margin-left: 10%;
-    margin-right: 10%
+    margin-right: 10%;
+
 }
 
-.icon {
-    font-size: 2rem;
-    color: greenyellow;
-    margin-bottom: 15px;
-}
-
-.btn-secondary {
+.btn-lern-more {
     display: block;
     width: 100%;
     background-color: #262626;
     color: white;
     border-radius: 5px;
     text-align: center;
-
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
 }
 
+/* end main */
+
+/* footer */
 
 footer {
     padding: 40px 20px;
@@ -233,38 +250,40 @@ footer {
     margin: auto;
 }
 
-
 .footer-links a {
     color: #ccc;
     margin: 0 10px;
     text-decoration: none;
 }
 
-.contact-info p {
-    margin: 8px 0;
-    color: #888;
+.social {
+    margin: 0 10px;
 }
 
-.social a {
-    color: greenyellow;
-    margin: 0 10px;
-    font-size: 1.2rem;
+.contact-info {
+    margin: 8px 0;
+}
+
+.contact-info p {
+    color: white;
 }
 
 .copyright {
-    color: #555;
+    color: #98989A;
+    ;
     margin-top: 20px;
-    font-size: 0.85rem;
+    font-size: 12px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+/* end footer */
 
 @media screen and (max-width: 768px) {
 
     nav ul {
+        display: none;
+    }
+
+    .contact-button-nav {
         display: none;
     }
 
@@ -273,39 +292,22 @@ img {
         justify-content: flex-end;
     }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    .tags {
-        flex-direction: row;
-        gap: 0.3rem;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .tag-item {
-        width: 60%;
-
-    }
-
-
-    .hero h1 {
-        font-size: 16px;
-    }
-
     header {
         margin: 0%;
     }
 
-    #mylinks {
-        display: none;
+    .tags {
+        padding: 18px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0% 3%;
     }
 
-    .contact-button-nav {
+    .tag-items {
+        color: #98989A;
+    }
+
+    #mylinks {
         display: none;
     }
 
@@ -313,19 +315,18 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40%;
+        margin: 5% 12%;
         height: auto;
-
     }
 
-    .article {
+    .services {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        margin: 5% 12%;
     }
 
-    img {
-        max-width: 60%;
-        height: auto;
-
+    .services-head {
+        margin: 0 3%;
     }
-
 }
